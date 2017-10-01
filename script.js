@@ -16,5 +16,11 @@ function caesarCipher (str, num) {
     if (newIndex > 25) {
       newIndex = newIndex - 26;
     }
+
+    if (newIndex < 0) {
+      newIndex = 26 + newIndex;
+    }
+
+    newString += alphabet[newIndex];
   }
 }
