@@ -12,5 +12,9 @@ function caesarCipher (str, num) {
 
     var currentIndex = alphabet.indexOf(currentLetter);
     var newIndex = currentIndex + num;
+
+    if (newIndex > 25) {
+      newIndex = newIndex - 26;
+    }
   }
 }
