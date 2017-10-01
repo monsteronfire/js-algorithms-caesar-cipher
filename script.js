@@ -21,6 +21,12 @@ function caesarCipher (str, num) {
       newIndex = 26 + newIndex;
     }
 
+    if (str[i] === str[i].toUpperCase()) {
+      newString += alphabet[newIndex].toUpperCase();
+    } else {
+      newString += alphabet[newIndex];
+    }
+
     newString += alphabet[newIndex];
   }
 }
