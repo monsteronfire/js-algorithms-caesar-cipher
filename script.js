@@ -1,4 +1,6 @@
 function caesarCipher (str, num) {
+  num = num % 26;
+
   var lowerCaseString = str.toLowerCase();
   var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
   var newString = '';
